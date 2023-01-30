@@ -1,0 +1,10 @@
+class TweetCounts:
+
+    def __init__(self):
+        
+
+    def recordTweet(self, tweetName: str, time: int) -> None:
+        
+
+    def getTweetCountsPerFrequency(self, freq: str, tweetName: str, startTime: int, endTime: int) -> List[int]:
+        
