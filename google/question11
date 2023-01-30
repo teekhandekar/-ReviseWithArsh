@@ -15,4 +15,4 @@ class Solution:
                 si,sj = max(i-k,1), max(j-k,1)
                 ans[i-1][j-1] = pre[ei][ej] - pre[si-1][ej] - pre[ei][sj-1] + pre[si-1][sj-1]
         
-        return 
+        return ans
