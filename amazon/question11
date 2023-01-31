@@ -1,0 +1,10 @@
+class Solution:
+    def numberOfWays(self, startPos: int, endPos: int, k: int) -> int:
+        MOD = 1000000007
+
+        diff = abs(startPos-endPos)
+        if diff > k or diff%2 != k%2:
+            return 0
+
+        r = (diff+k)//2
+        return math.comb(k,r)%MOD
